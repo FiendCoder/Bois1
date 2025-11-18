@@ -43,12 +43,12 @@ const influencers: Influencer[] = [
 
 <template>
   <section class="bg-white">
-    <div class="page-container py-12 sm:py-16 lg:py-24">
+    <div class=" page-container py-12 sm:py-16 lg:py-24">
       
       <div class="max-w-xl mx-auto text-center mb-10 lg:mb-14">
         <h2
-          class="text-[18px] sm:text-[20px] tracking-[0.25em]
-                 text-[#4a637a] font-semibold uppercase"
+          class="text-[18px] sm:text-[28px] tracking-[0.06em]
+                 text-[#4a637a]  uppercase"
         >
           WHAT’S YOUR INFLUENCE?
         </h2>
@@ -71,7 +71,7 @@ const influencers: Influencer[] = [
           class="bg-white rounded-[26px] shadow-[0_18px_35px_rgba(0,0,0,0.12)]
                  overflow-hidden max-w-xs mx-auto md:mx-0"
         >
-          <!-- Top image -->
+          
           <div class="w-full">
             <img
               :src="person.image"
@@ -81,7 +81,7 @@ const influencers: Influencer[] = [
           </div>
 
          
-          <div class="px-6 py-4 flex items-center gap-3">
+          <div class="font-poppins px-6 py-4 flex items-center gap-3">
             <img
               :src="person.avatar"
               :alt="person.name"

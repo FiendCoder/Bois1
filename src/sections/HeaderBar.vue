@@ -69,7 +69,7 @@ function toggleMobile() {
       
       <div class="flex items-center gap-6">
         
-        <nav class="hidden md:flex items-center gap-8 text-xs tracking-[0.28em]">
+        <nav class="hidden md:flex items-center gap-8 text-xs tracking-[0.2em]">
           <button
             v-for="item in navItems"
             :key="item.label"

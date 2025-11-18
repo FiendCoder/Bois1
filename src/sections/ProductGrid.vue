@@ -52,62 +52,63 @@ const products: Product[] = [
 </script>
 
 <template>
-  <section class="bg-[#f6f7f8]">
-    <div class="page-container py-12 sm:py-16 lg:py-24 space-y-14">
+  
+
+
+  <section class="bg-[#f6f7f8]" id="products">
+  
+    <div class="page-container  md:px-40 py-12 sm:py-16 lg:py-24 space-y-14">
       <div
         v-for="p in products"
         :key="p.id"
-        class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center"
+        :class="[
+          
+          'flex flex-col gap-10 lg:gap-16 items-center md:justify-between',
+          p.reverse ? 'md:flex-row-reverse' : 'md:flex-row'
+        ]"
       >
-       
-        
-        <div
-          :class="[
-            'flex justify-center mx-auto md:justify-end',
-            p.reverse ? 'md:order-1 md:justify-start' : 'md:order-2 md:justify-end',
-          ]"
-        >
-          <div class="w-full max-w-xs sm:max-w-sm">
-            <img
-              :src="p.image"
-              :alt="p.title"
-              class="w-full h-auto rounded-xl shadow-md object-cover"
-            />
-          </div>
-        </div>
-
-   
-        <div
-  :class="[
     
-    'space-y-4 max-w-xs sm:max-w-sm mx-auto md:mx-0',
- 
-    p.reverse ? 'md:order-2 md:text-left' : 'md:order-1 md:text-left',
-  ]"
->
+        <div class="max-w-xl space-y-4">
           <h3
-            class="text-[15px] sm:text-[16px] lg:text-[18px]
-                   tracking-[0.18em] text-[#4a637a]
-                   font-semibold uppercase"
+            class="text-[16px] lg:text-[28px] tracking-[0.1em] text-[#4a637a]
+                    uppercase"
           >
             {{ p.title }}
           </h3>
 
           <p
             v-if="p.subtitle"
-            class="text-xs tracking-[0.2em] text-gray-500 uppercase"
+            class="text-sm  text-gray-500"
           >
             {{ p.subtitle }}
           </p>
 
           <div
             class="mt-2 border-l-[3px] border-[#d3dde5] pl-4
-                   text-[13px] lg:text-[14px]
-                   leading-relaxed text-[#7b8a99] space-y-1"
+                   text-[13px] lg:text-[14px] leading-relaxed
+                   text-[#7b8a99] space-y-1"
           >
             <p v-for="(line, i) in p.copy" :key="i">
               {{ line }}
             </p>
+          </div>
+        </div>
+
+        <div class="flex-shrink-0">
+          <div class="w-full max-w-[260px] lg:max-w-[280px]">
+         
+            <div
+              v-if="!p.image"
+              class="aspect-[4/3] rounded-xl bg-white shadow-md grid place-items-center text-xs text-gray-400"
+            >
+              Product image
+            </div>
+            <img
+              v-else
+              :src="p.image"
+              :alt="p.title"
+              class="w-full h-auto rounded-xl shadow-md object-cover"
+            />
           </div>
         </div>
       </div>

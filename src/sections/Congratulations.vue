@@ -9,8 +9,8 @@
       
       <div class="max-w-2xl mx-auto text-center">
         <h2
-          class="text-[18px] lg:text-[20px] tracking-[0.28em] text-[#4a637a]
-                 font-semibold uppercase"
+          class="text-[18px] lg:text-[26px] tracking-[0.07em] text-[#4a637a]
+                  uppercase"
         >
           CONGRATULATIONS
         </h2>

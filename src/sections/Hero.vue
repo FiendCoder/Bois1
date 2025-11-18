@@ -20,12 +20,12 @@ import womanHeroUrl from '@/assets/woman-hero.png'
       </div>
 
       <div
-        class="relative page-container pt-20 pb-16 flex items-center justify-center"
+        class="relative page-container pt-35 pb-16 flex items-center justify-center"
       >
         <div class="max-w-xs text-center">
           <h1
             class="text-3xl leading-[1.3]
-                   tracking-[0.14em] text-[#4a637a]"
+                   tracking-[0.1em] text-[#4a637a]"
           >
             COLLAGEN IS<br />
             THE FOUNTAIN<br />

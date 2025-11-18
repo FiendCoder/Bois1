@@ -36,8 +36,8 @@ import registerBgImg from '@/assets/register-bg.png'
        
         <div class="px-5 py-5 sm:px-6 sm:py-6">
           <h3
-            class="text-[15px] sm:text-[16px] tracking-[0.22em]
-                   text-[#4a637a] font-semibold uppercase mb-6"
+            class="text-[15px] sm:text-[16px] tracking-[0.2em]
+                   text-[#4a637a]  uppercase mb-6"
           >
             REGISTER TO LEARN MORE
           </h3>
